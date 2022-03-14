@@ -1,0 +1,64 @@
+body    {
+    background-color: lightblue;
+    color: navy;
+    text-align: center;
+    background-image: url("cloud.png");
+    background-size: 90%;
+    background-repeat: y axis;
+    background-position: center;
+} 
+h1  {
+    animation: fadeIn 5s linear 0s infinite alternate;
+    font-size: 3em;
+}
+p   {
+    font-size: 2em;
+    font-weight: 600;
+}
+.shrinking  {
+    animation: shrink 3s linear 0s infinite alternate;
+}
+.rainbow    {
+    animation: rainbowgradient 10s linear 5s infinite normal;
+}
+.sliding    {
+    animation: slide 4s ease-in-out 0s infinite alternate;
+}
+.rotation   {
+    animation: rotate 6s linear 0s infinite normal;
+}
+@keyframes fadeIn {
+    0% {opacity: 0.2;}
+    100% {opacity: 1;}
+}
+@keyframes rainbowgradient {
+    from {
+        color: red;
+      }
+      30% {
+        color: yellow;
+      }
+      60% {
+        color: blue;
+      }
+      100% {
+        color: red;
+      }
+}
+@keyframes shrink   {
+    0%  {font-size: 2.5em;}
+    100%    {font-size: 0.5em;}
+}
+@keyframes slide {
+    0% {
+        position: relative;
+        left: -100px;
+}
+      100% {
+          position: relative;
+        left: 100px;
+      }
+}
+@keyframes rotate   {
+    100%    {transform: rotate(360deg);}
+}
